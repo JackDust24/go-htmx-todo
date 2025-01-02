@@ -19,17 +19,21 @@
         <h2>Tasks</h2>
 
         <div>
-          <a href="#" hx-get="/newtaskform" hx-target="#addTaskForm"
+          <a
+            href="#"
+            hx-get="/newtaskform"
+            hx-target="#addTaskForm"
+            class="btn btn-secondary"
             >Add New Item</a
           >
-        </div>
 
-        <div
-          id="taskList"
-          hx-get="/tasks"
-          hx-trigger="load"
-          hx-swap="innerHTML"
-        ></div>
+          <div
+            id="taskList"
+            hx-get="/tasks"
+            hx-trigger="load"
+            hx-swap="innerHTML"
+          ></div>
+        </div>
       </div>
       <!-- <div class="col">
             
